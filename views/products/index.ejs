@@ -1,0 +1,57 @@
+
+    <%- include("../partials/header") %> 
+    <%- include("../partials/navbar") %> 
+
+<style>
+    .classify{
+        background-color: rgb(134, 134, 134);
+        border: 2.2px solId black;
+        margin-top: 20px;
+        margin-right: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-weight: 600;
+        font-size: 2.4rem;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        box-shadow: 1px 1px 1px red ;
+        /* text-decoration:none; */
+        
+    }
+    a{
+        text-decoration:none;
+    }
+
+</style>
+    <main class="container-div">
+        <hr style="border-top: 5px solid black;">
+
+        <div class="row" >
+            <!-- <div class="col" style="display: flex;"> -->
+                <% for(let product of products){%>
+                    
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text"><%= product.desc %> </p>
+                                <h5 class="card-title">~ <%= product.name %> </h5>
+                              <a id="showButton" href="/products/<%= product._id %>" class="btn mb-3">View Fullscreen</a>
+                              
+                            </div>
+                          </div>
+                  
+                <% }  %> 
+
+            <!-- </div> -->
+            
+        </div>
+    </div>
+
+
+
+
+    
+    
+  
+
+    

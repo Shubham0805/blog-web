@@ -1,0 +1,41 @@
+
+<%- include("../partials/header") %> 
+<%- include("../partials/navbar") %> 
+
+    <h1 style="text-align: center;">FORM FOR ADDING NEW QUOTES</h1>
+    
+    <!-- <div class="border-new-form"> -->
+
+        <div class="container border-new-form mt-3">
+            <form class="validated-form" action="/products" method="POST" novalidate>
+                <div class="mb-3">
+                  <label for="name" class="form-label mt-3" >Name of Author: </label>
+                  <input type="text" class="form-control  id="name" placeholder="Enter the name of Author: " name="product[name]" required>
+                  <!-- <dv id="emailHelp" class="form-text">We'll never share your email imagev> -->
+                    <div class="valid-feedback">   <!-- // valid feedback is for the looking for its betterment and to give acknowledgement that this is filled -->
+                      Looks good!
+                    </div>
+                </div>
+               
+                <div>
+                    <label for="desc" class="form-label">Quote: </label>
+                    <textarea id="desc" cols="30" rows="6" class="form-control" placeholder="Enter Quote here: " name="product[desc]" required></textarea>
+                    <div class="valid-feedback">   <!-- // valid feedback is for the looking for its betterment and to give acknowledgement that this is filled -->
+                      Looks good!
+                    </div>
+                  </div>
+               
+                <br><br>
+              
+                <button type="submit" class="btn mb-3">Add Quote</button>
+              </form>
+        
+        
+            </div>
+
+
+
+    <!-- </div> -->
+    
+
+    
